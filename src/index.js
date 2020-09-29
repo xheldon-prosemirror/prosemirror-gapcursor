@@ -12,6 +12,9 @@ import {GapCursor} from "./gapcursor"
 // `ProseMirror-gapcursor`. You can either include
 // `style/gapcursor.css` from the package's directory or add your own
 // styles to make it visible.
+//
+// @cn 创建一个 gap 光标插件。如果启用的话，它将会捕获点击区域附近的和方向键经过的不允许有一个正常的可选择区域的地方，然后为它们创建一个 gap 光标选区。
+// 光标元素的类名是 `ProseMirror-gapcursor`。你既可以从该包中直接引入 `style/gapcursor.css` 做样式文件，也可以添加你自己的样式以使它可见。
 export const gapCursor = function() {
   return new Plugin({
     props: {

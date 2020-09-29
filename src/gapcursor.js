@@ -3,6 +3,8 @@ import {Slice} from "prosemirror-model"
 
 // ::- Gap cursor selections are represented using this class. Its
 // `$anchor` and `$head` properties both point at the cursor position.
+//
+// @cn 这个类是 Gap 光标选区的表现形式。它的 `$anchor` 和 `$head` 属性都指向光标的位置。
 export class GapCursor extends Selection {
   // : (ResolvedPos)
   constructor($pos) {
